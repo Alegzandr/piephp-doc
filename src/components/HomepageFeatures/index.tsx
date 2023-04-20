@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
     {
         title: "Effortless Development",
-        Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+        Svg: require("@site/static/img/rocket.svg").default,
         description: (
             <>
                 Our framework is designed to simplify your development process,
@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: "Streamlined Functionality",
-        Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+        Svg: require("@site/static/img/scissors.svg").default,
         description: (
             <>
                 Focus on what really matters with our framework's streamlined
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: "Flexible and Adaptable",
-        Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+        Svg: require("@site/static/img/wrench.svg").default,
         description: (
             <>
                 Powered by vanilla PHP, our framework is fully customizable and
