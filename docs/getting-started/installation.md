@@ -26,7 +26,7 @@ Before installing the framework, make sure your system meets the following requi
     CREATE DATABASE piephp;
     ```
 
-4. Run the installation script by running :
+4. Run the installation script by running
 
     ```bash
     ./console/exec install
