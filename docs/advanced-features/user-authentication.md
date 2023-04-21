@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Basic User Authentication
+title: User Authentication
 description: Information on the framework's basic user authentication functionality.
 ---
 

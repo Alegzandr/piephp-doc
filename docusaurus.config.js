@@ -68,9 +68,19 @@ const config = {
                         label: "Documentation",
                     },
                     {
-                        href: "https://github.com/EpitechWebAcademiePromo2024/W-PHP-502-MLN-2-2-PiePHP-alexandre1.farrenq/archive/refs/heads/main.zip",
-                        label: "Download",
+                        href: "/docs/getting-started/quick-start-guide",
+                        label: "Quick start",
                         position: "left",
+                    },
+                    {
+                        href: "https://github.com/EpitechWebAcademiePromo2024/W-PHP-502-MLN-2-2-PiePHP-alexandre1.farrenq",
+                        label: "GitHub",
+                        position: "left",
+                    },
+                    {
+                        href: "https://github.com/EpitechWebAcademiePromo2024/W-PHP-502-MLN-2-2-PiePHP-alexandre1.farrenq/archive/refs/heads/main.zip",
+                        label: "Download PiePHP",
+                        position: "right",
                     },
                 ],
             },
@@ -81,6 +91,7 @@ const config = {
             prism: {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
+                additionalLanguages: ["php"],
             },
         }),
 };
