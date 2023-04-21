@@ -14,13 +14,13 @@ Our router follows a simple convention for mapping URLs to controller actions. T
 
 `/controller-name/action-name[/id]`
 
--   The first part of the URL represents the name of the controller class that will handle the request.
--   The second part represents the name of the action method within the controller that will be executed.
--   An optional third part can be added to the URL to pass dynamic parameters to the action method. This part can be named anything you want, and it will be passed to the action method as a parameter.
+-   The **first** part of the URL represents the name of the **controller class** that will handle the request.
+-   The **second** part represents the name of the **action method** within the controller that will be executed.
+-   An **optional third** part can be added to the URL to pass **dynamic parameters** to the action method. This part can be named anything you want, and it will be passed to the action method as a parameter.
 
 ### Homepage
 
-By default, the homepage of the application maps to the AppController and the indexAction. Therefore, if the URL does not include any controller or action, the router will automatically route the request to the AppController and the indexAction.
+By default, the homepage of the application maps to the `AppController` and the `indexAction`. Therefore, if the URL does not include any controller or action, the router will automatically route the request to the AppController and the indexAction.
 
 ### Example
 

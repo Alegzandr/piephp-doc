@@ -10,7 +10,7 @@ The templating engine in our framework is designed to make it easy to create dyn
 
 ### Displaying Variables
 
-You can display the value of a variable using the {{ }} syntax. Here is an example:
+You can display the value of a variable using the `{{ }}` syntax. Here is an example:
 
 ```php
 {{ $variable }}
@@ -44,7 +44,7 @@ You can use the @foreach statement to loop through an array or collection of dat
 @endforeach
 ```
 
-Note that you must use {{ }} to display the values of variables within the loop.
+Note that you must use `{{ }}` to display the values of variables within the loop.
 
 ### Checking for Existence with @isset and @empty
 

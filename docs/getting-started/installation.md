@@ -10,14 +10,15 @@ description: Instructions for installing the framework on your local machine or 
 
 Before installing the framework, make sure your system meets the following requirements:
 
--   PHP version 8.0 or later
--   MySQL version 8.0 or later (or MariaDB version 15.0 or later)
+-   **PHP** version 8.0 or later
+-   **MySQL** version 8.0 or later (or MariaDB version 15.0 or later)
+-   **Apache** version 2.4.57 or later (rewrite mod must be enabled)
 
 ### Installation Steps
 
 1. Download the framework from [here](https://github.com/EpitechWebAcademiePromo2024/W-PHP-502-MLN-2-2-PiePHP-alexandre1.farrenq/archive/refs/heads/main.zip). Extract the files to your local machine.
-2. Configure a Apache Virtual Host pointing to project's root.
-3. Create an empty MySQL database.
+2. Configure a **Apache Virtual Host** pointing to project's root.
+3. Create an **empty MySQL** database.
 
     ```bash
     mysql -u username -p
