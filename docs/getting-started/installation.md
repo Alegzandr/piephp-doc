@@ -11,6 +11,7 @@ description: Instructions for installing the framework on your local machine or 
 Before installing the framework, make sure your system meets the following requirements:
 
 -   PHP version 8.0 or later
+-   MySQL version 8.0 or later (or MariaDB version 15.0 or later)
 
 ### Installation Steps
 
