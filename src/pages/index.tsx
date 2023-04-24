@@ -19,7 +19,7 @@ function HomepageHeader() {
                         className="button button--secondary button--lg"
                         to="/docs/getting-started"
                     >
-                        Get started 👍
+                        Get started &nbsp; 🚀
                     </Link>
                 </div>
             </div>
@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
     const { siteConfig } = useDocusaurusContext();
     return (
         <Layout
-            title={`${siteConfig.title}`}
+            title={`${siteConfig.title} - Simplified Development for Vanilla PHP Projects`}
             description="Our lightweight PHP framework is designed to simplify your development process and accelerate basic tasks like routing, ORM, and templating. With zero dependencies and basic user authentication, you can focus on what really matters: building your project. Our documentation covers everything from getting started to advanced features, troubleshooting, and best practices for deployment."
         >
             <HomepageHeader />
