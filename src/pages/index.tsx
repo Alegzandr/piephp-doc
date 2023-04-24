@@ -31,8 +31,8 @@ export default function Home(): JSX.Element {
     const { siteConfig } = useDocusaurusContext();
     return (
         <Layout
-            title={`Hello from ${siteConfig.title}`}
-            description="Description will go into a meta tag in <head />"
+            title={`${siteConfig.title}`}
+            description="Our lightweight PHP framework is designed to simplify your development process and accelerate basic tasks like routing, ORM, and templating. With zero dependencies and basic user authentication, you can focus on what really matters: building your project. Our documentation covers everything from getting started to advanced features, troubleshooting, and best practices for deployment."
         >
             <HomepageHeader />
             <main>
