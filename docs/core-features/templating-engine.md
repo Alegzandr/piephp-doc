@@ -23,9 +23,9 @@ Note that you can include this syntax anywhere in your HTML to display the value
 You can use conditional statements to display different content based on a condition. Here is an example syntax:
 
 ```php
-@if (condition)
+@if(condition)
     content
-@elseif (condition)
+@elseif(condition)
     content
 @else
     content
@@ -39,7 +39,7 @@ Note that you can include multiple lines of content within the @if and @else blo
 You can use the @foreach statement to loop through an array or collection of data. Here is an example syntax:
 
 ```php
-@foreach ($users as $user)
+@foreach($users as $user)
     {{ $user }}
 @endforeach
 ```
@@ -60,6 +60,14 @@ You can check whether a variable or value exists using the @isset and @empty sta
 @empty($variable)
     content
 @endempty
+```
+
+Prefer this instead of `@isset($_POST)` in case you want to display a superglobal:
+
+```php
+@if(isset($_POST))
+    content
+@endif
 ```
 
 That's it for our templating engine! With these features, you can create dynamic, data-driven web pages that display different content based on conditions and iterate through collections of data.

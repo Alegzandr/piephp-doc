@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: Deployment
 description: Information on deploying your framework to a production environment.
 ---

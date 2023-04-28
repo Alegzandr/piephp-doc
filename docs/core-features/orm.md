@@ -63,7 +63,7 @@ The ORM also supports advanced querying with the find() method. You can pass an 
 ```php
 $articles = $model->find([
   "WHERE" => "title = 'A great title'",
-  "ORDER BY" => "id ASC",
+  "ORDER BY" => "articles.id ASC",
   "LIMIT" => "10"
 ]);
 ```
@@ -83,7 +83,7 @@ class ArticleModel extends Entity
 
   public function __construct() {
     parent::__construct();
-    $this->addOneToMany("users");
+    $this->setOneToManyRelation("users");
   }
 }
 ```
@@ -99,9 +99,9 @@ class ArticleModel extends Entity
   protected $content;
   protected $user_id;
 
-  public function __construct() {
-    parent::__construct();
-    $this->addManyToMany("tags");
+  public function __construct($data = []) {
+    parent::__construct($data);
+    $this->setManyToManyRelation("tags");
   }
 }
 ```
@@ -123,10 +123,11 @@ The ORM includes error handling to help you catch and handle errors when interac
 
 ```php
 try {
-  ORM::create([
+  $article_model = new ArticleModel([
     "title" => "A great title",
     "content" => "This is a wonderful blog article",
   ]);
+  $article_model->create();
 } catch (Exception $e) {
   echo "Error: " . $e->getMessage();
 }
